@@ -10,6 +10,7 @@ pipeline{
         stage("add files"){
             steps{
                 sh "touch ~/jenkins-pipelines/file.txt"
+                sh "bash deploy.sh"
             }
         }
 
